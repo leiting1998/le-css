@@ -1,0 +1,70 @@
+body {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.Container {
+    position: relative; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    overflow: hidden;   /* 触发 BFC 规则，避免子元素浮动后的父元素失去宽和高 */
+}
+
+.row {
+    display: flex;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;  /* 触发 BFC 规则 */
+    box-sizing: border-box;
+
+    font-weight: 400;
+    letter-spacing: .1rem;
+    margin-bottom: 1%;
+    background-color: #CCC;
+
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.column:first-child,
+.columns:first-child {
+    margin-right: 4%;
+}
+
+.one.column,
+.one.columns {
+    flex: 0 0 4.66666666667%;
+}
+
+.two.columns { flex: 0 0 13.3333333333%; -ms-flex: 0 0 13.3333333333%; }
+
+.three.columns { flex: 0 0 22%; -ms-flex: 0 0 22%; }
+
+.four.columns { flex: 0 0 30.6666666667%; -ms-flex: 0 0 30.6666666667% }
+
+.five.columns { flex: 0 0 39.3333333333%; -ms-flex: 0 0 39.3333333333%;}
+
+.six.columns  { flex: 0 0 48%; -ms-flex: 0 0 48%;}
+
+.seven.columns{ flex: 0 0 56.6666666667%; -ms-flex: 0 0 56.6666666667%;}
+
+.eight.columns{ flex: 0 0 65.3333333333%; -ms-flex: 0 0 65.3333333333%; }
+
+.nine.columns { flex: 0 0 74.0%; -ms-flex: 0 0 74.0%; }
+
+.ten.columns  { flex: 0 0 82.6666666667%; -ms-flex: 0 0 82.6666666667%;}
+
+.eleven.columns { flex: 0 0 91.3333333333%; -ms-flex: 0 0 91.3333333333%;}
+
+.twelve.columns { flex: 0 0 100%; -ms-flex: 0 0 100%; margin-left: 0; }

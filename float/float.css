@@ -1,0 +1,60 @@
+body {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.Container {
+    position: relative; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    overflow: hidden;   /* 触发 BFC 规则，避免子元素浮动后的父元素失去宽和高 */
+}
+
+.row {
+    overflow: hidden;   /* 触发 BFC 规则，避免子元素浮动后的父元素失去宽和高 */
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;  /* 生成 BFC 规则的盒子 */
+    box-sizing: border-box;
+
+    font-weight: 400;
+    letter-spacing: .1rem;
+    margin-bottom: 1%;
+    background-color: #CCC;
+
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.column:first-child,
+.columns:first-child {
+    margin-right: 4%;
+}
+
+.one.column,
+.one.columns         { width: 4.66666666667%; }
+.two.columns         { width: 13.3333333333%; }
+.three.columns       { width: 22%;            }
+.four.columns        { width: 30.6666666667%; }
+.five.columns        { width: 39.3333333333%; }
+.six.columns         { width: 48%;            }
+.seven.columns       { width: 56.6666666667%; }
+.eight.columns       { width: 65.3333333333%; }
+.nine.columns        { width: 74.0%;          }
+.ten.columns         { width: 82.6666666667%; }
+.eleven.columns      { width: 91.3333333333%; }
+.twelve.columns      { width: 100%; margin-left: 0; }
+
+.one-third.column    { width: 30.6666666667%; }
+.two-thirds.column   { width: 65.3333333333%; }
